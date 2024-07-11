@@ -125,7 +125,7 @@ def main():
         else:
             print("Invalid Choice.Please try again.")   
 
-if _name=="main_":
+if __name__=="__main__":
     main()            
 
 count=3
