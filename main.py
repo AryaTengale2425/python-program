@@ -40,7 +40,8 @@ while(count!=0):
                 id=input("Enter the employee ID:")
                 delete_employee(id)
             elif ch=='5':
-                generate_report()    
+                generate_report()
+                    
             
             elif ch=='5':
                 cnt=0
