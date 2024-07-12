@@ -12,6 +12,7 @@ def write_csv(data):
         writer.writeheader()
         writer.writerows(data)
 
+
 def create_employee(id,name,salary,city,designation,present_days):
     data=read_csv()
     new_employees={'id': id,'name': name,'salary': salary,'city': city,'designation': designation,'present_days':present_days }
@@ -19,7 +20,7 @@ def create_employee(id,name,salary,city,designation,present_days):
     write_csv(data)
 
 
-def delete_employee(Id):
+def delete_employee(id):
    data=read_csv()
    data=[employee for employee in data if employee['id'] != id]
    write_csv(data)   
@@ -58,6 +59,7 @@ def update_employee(id,name,salary,city,designation,present_days):
       if name:
        emp['name']=name
        if salary:
+        
         emp['salary']=salary
        if city:
         emp['city']=city

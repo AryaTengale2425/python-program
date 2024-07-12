@@ -14,7 +14,8 @@ while(count!=0):
             print("2.read")
             print("3.update")
             print("4.delete")
-            print("5.exit")
+            print("5.report")
+            print("6.exit")
             ch=input("Enter your choice:")
             if ch=='1':
                 id=input("enter the employee ID:")
@@ -38,6 +39,9 @@ while(count!=0):
             elif ch=='4':
                 id=input("Enter the employee ID:")
                 delete_employee(id)
+            elif ch=='5':
+                generate_report()    
+            
             elif ch=='5':
                 cnt=0
                 break
