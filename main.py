@@ -4,7 +4,7 @@ count=3
 while(count!=0):
     userName=input("Enter the user name=")
     password=input("Enter the password=")
-    if(userName=="aa" and password=="123"):
+    if(userName=="arya" and password=="arya123"):
         print("---------EMPLOYEE LOGIN SUCCESSFULLY----------")
         #count=1
         cnt=1
@@ -22,24 +22,26 @@ while(count!=0):
                 salary=input("Enter the employee salary:")
                 city=input("Enter the employee city:")
                 designation=input("Enter the employee designation:")
-                create_employee(id,name,salary,city,designation)
+                present_days=input("Enter the present Days:")
+                create_employee(id,name,salary,city,designation,present_days)
 
-            if ch=='2':
+            elif ch=='2':
                 read_employee()
-            if ch=='3':
+            elif ch=='3':
                 id=input("enter the employee ID:")
                 name=input("Enter the employee name:")
                 salary=input("Enter the employee salary:")
                 city=input("Enter the employee city:")
                 designation=input("Enter the employee designation:")
-                update_employee(id,name or None,salary or None,city or None,designation or None)
-            if ch=='4':
+                present_days=input("Enter the present days:")
+                update_employee(id,name or None,salary or None,city or None,designation or None,present_days or None)
+            elif ch=='4':
                 id=input("Enter the employee ID:")
                 delete_employee(id)
-            if ch=='5':
+            elif ch=='5':
                 cnt=0
-            else:
-                print("Invalid Choice...please try again")
+                break
+            
     elif(userName!="arya" and password!="arya123"):
         count-=1
         print("userName and password are incorrect")
